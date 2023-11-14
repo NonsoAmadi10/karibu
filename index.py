@@ -36,7 +36,7 @@ def generate_mnemonic(bits=128, checksum_bits=4):
     # Divide the combined bits into groups of 11 bits
     groups_of_11_bits = [combined_bits[i:i+11] for i in range(0, len(combined_bits), 11)]
     # Map each group to a word in a predefined word list
-    word_list = ["apple", "banana", "cherry", "date", "elderberry", "fig", "grape"]
+    word_list = ["ubuntu", "ughali", "eko", "ukwa", "akwaaba", "asante", "lome"]
     mnemonic = ' '.join([word_list[int(group, 2)] for group in groups_of_11_bits])
     return mnemonic
 
